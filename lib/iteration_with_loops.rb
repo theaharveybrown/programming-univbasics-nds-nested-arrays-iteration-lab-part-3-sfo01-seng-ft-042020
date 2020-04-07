@@ -6,7 +6,9 @@ def join_nested_strings(src)
   while row_i < src.length do 
     col_i = 0 
     while col_i < src[row_i].length do 
-      if type(src[row_i][col_i] == 
+      if src[row_i][col_i].is_a?(String)
+        string += src[row_i][col_i]
+      end 
       col_i += 1 
     end 
     row_i += 1 
